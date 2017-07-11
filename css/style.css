@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+b { font-weight:normal;}
+input{
+    border: 0;
+    outline: none;
+}
+li{
+    list-style: none;
+}
+
+body{
+    background:url("../images/bg.jpg") ;
+    background-size: 100%;
+    -moz-background-size:100%;
+    -o-background-size:100%;
+
+
+}
+.wrapper{
+    position: absolute;
+    width: 346px;
+    height: 360px;
+    background: #fff;
+    -moz-opacity:0.3;
+    filter:alpha(opacity=30);
+    background-color: rgba(255,255,255,0.3);
+    top: 50%;
+    left:50%;
+    z-index: 1;
+    margin-left: -173px;
+    margin-top: -180px;
+    border-radius: 15px;
+    behavior: url("../js/PIE_uncompressed.htc");
+
+}
+.login{
+    position: absolute;
+    width: 346px;
+    height: 360px;
+    top: 50%;
+    left:50%;
+    z-index: 2;
+    margin-left: -173px;
+    margin-top: -180px;
+    border-radius: 15px;
+    behavior: url("../js/PIE_uncompressed.htc");
+
+
+
+
+}
+
+.login:hover{
+    box-shadow: 2px 2px  20px #0BC2FF;
+    transition: 0.7s;
+
+
+}
+#pp{
+    width: 294px;
+    height: 20px;
+
+    position: absolute;
+    top: 38px;
+    left:5px;
+    color: #FF2E19;
+    font-size: 13px;
+    line-height: 20px;
+    display: none;
+}
+#pp2{
+    width: 294px;
+    height: 20px;
+    /*background: red;*/
+    position: absolute;
+    top: 38px;
+    left:5px;
+    color: #FF2E19;
+    font-size: 13px;
+    line-height: 20px;
+    display: none;
+}
+
+.login-top{
+    width: 173px;
+    height: 50px;
+    cursor:pointer;
+    position: relative;
+    z-index: 1;
+    line-height: 50px;
+    /*  border-bottom: 1px solid #000;*/
+
+
+}
+.login-top-left{
+    background: #e7f0f1;
+    color: blue;
+    float: left;
+    text-align: center;
+    border-radius: 15px 0 0 0;
+
+}
+.login-top-right{
+
+    color: blue;
+    float: right;
+    text-align: center;
+    border-radius:  0 15px 0 0;
+    behavior: url("../js/PIE_uncompressed.htc");
+}
+.login-top-right:hover .change2{
+    display: block;
+}
+.login-top-left a{
+    color:#7d7d7e;
+
+}
+.login-top-right a{
+
+    color:#222;
+
+}
+.change{
+    width: 346px;
+    height: 310px;
+    position: absolute;
+    top:50px;
+
+}
+
+.person-head{
+
+    /*background:url("../images/h.jpg") no-repeat center;*/
+    float: left;
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    margin-left: 139px;
+    margin-top: 15px;
+
+    border: 2px #fff solid;
+    behavior: url("../js/PIE_uncompressed.htc");
+}
+.person-head img{
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+}
+.login-mid-top{
+    width: 304px;
+    position: relative;
+    /*    background: red;*/
+
+    left: 21px;
+    top: 100px;
+    line-height: 38px;
+    /* background: red;*/
+    height: 38px;
+
+
+}
+
+
+.text{
+    position: absolute;
+    width: 244px;
+    height: 38px;
+    background: #deeef5;
+    border: 1px solid #baced9;
+    left:42px;
+    top:0;
+    border-radius: 3px;
+    text-align: left;
+    padding-left: 10px;
+    behavior: url("../js/PIE_uncompressed.htc");
+}
+.bg-img{
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    background: url("../images/head.jpg") no-repeat;
+    border: 1px solid #baced9;
+    top:0;
+    left:4px;
+    border-radius: 3px;
+    behavior: url("../js/PIE_uncompressed.htc");
+}
+.login-mid-bottom{
+    width: 304px;
+    position: relative;
+
+
+    left: 21px;
+    top: 120px;
+    line-height: 38px;
+    /* background: red;*/
+    height: 38px;
+}
+.bg-img2{
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    background: url("../images/m.jpg") no-repeat;
+    border: 1px solid #baced9;
+    top:0;
+    left:4px;
+    border-radius: 3px;
+    behavior: url("../js/PIE_uncompressed.htc");
+}
+.text2{
+    position: absolute;
+    width: 244px;
+    height: 38px;
+    background: #deeef5;
+    border: 1px solid #baced9;
+    left:42px;
+    top:0;
+    border-radius: 3px;
+    text-align: left;
+    padding-left: 10px;
+    behavior: url("../js/PIE_uncompressed.htc");
+}
+.login-btn{
+    width: 294px;
+    height: 38px;
+    position: absolute;
+    left:0;
+    top:217px;
+    margin-left: 25px;
+    border:0;
+    background: #008cee;
+    color: #fff;
+    font-size: 15px;
+    cursor:pointer;
+    letter-spacing: 0.2em;
+    border-radius: 3px;
+    behavior: url("../js/PIE_uncompressed.htc");
+}
+.footer{
+    width: 294px;
+    position: absolute;
+    left:0;
+    top:273px;
+    margin-left: 25px;
+
+}
+.footer span{
+
+    width:100px;
+
+}
+.footer a{
+    font-size: 13px;
+    color: #FFF;
+
+}
+.footer a:hover{
+    color:red;
+}
+.footer ul{
+    float: left;
+    margin-right: 115px;
+}
+.footer ul li{
+    float: left;
+}
+.footer ul li a{
+    font-size: 13px;
+    margin-left: 2px;
+}
+.footer ul li a img{
+    vertical-align: middle;
+
+}
+
+.footerA b{
+    background: url("../images/qq.png") no-repeat center;
+    width: 19px;
+    height: 18px;
+    display: block;
+    float: left;
+    margin-top: 3px;
+}
+.footerA span{
+    margin-left: 3px;
+}
+.footerB b{
+    background: url("../images/qq.png") no-repeat center;
+    width: 19px;
+    height: 18px;
+    display: block;
+    float: left;
+    margin-top: 3px;
+    margin-left: 15px;
+}
+.b1{
+    color:#c7c7cc;
+    width: 1px;
+}
+
+/*二维码*/
+.change2{
+    width: 346px;
+    height: 310px;
+    position: absolute;
+    top:50px;
+    display: none;
+
+}
+.code{
+    width: 147px;
+    height:147px;
+    background: url("../images/s.jpg") no-repeat;
+    position: relative;
+    left:99.5px;
+    top:30px;
+    border:3px solid #30AFCD;
+
+
+}
+.code-ul{
+    width: 147px;
+    position: absolute;
+    left:103px;
+    top:188px;
+}
+.code-ul li{
+    float: left;
+}
+.code-ul li a{
+    font-size: 13px;
+    color: #fff;
+}
+
+
+.footer2{
+    width: 371px;
+    position: absolute;
+    left:0;
+    top:223px;
+    margin-left: 25px;
+
+}
+.footer2 span{
+
+    width:100px;
+
+}
+.footer2 a{
+    font-size: 13px;
+    color: #FFF;
+
+}
+.footer2 ul{
+    float: left;
+    margin-right: 115px;
+    margin-left: 20px;
+}
+.footer2 ul li{
+    float: left;
+    margin-left: 20px;
+}
+.footer2 ul li a{
+    font-size: 13px;
+    margin-left: 2px;
+}
+.footer2 ul li a img{
+    vertical-align: middle;
+
+}
+.footerC b{
+    background: url("../images/qq.png") no-repeat center;
+    width: 19px;
+    height: 18px;
+    display: block;
+    float: left;
+    margin-top: 3px;
+}
+.footerC span{
+    margin-left: 3px;
+}
+/*@media \0screen\,screen\9 {!* 只支持IE6、7、8 *!
+    .login{
+        background-color:#000000;
+        filter:Alpha(opacity=50);
+        position:static; !* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 *!
+        *zoom:1; !* 激活IE6、7的haslayout属性，让它读懂Alpha *!
+    }
+    .login a{
+        position: relative;!* 设置子元素为相对定位，可让子元素不继承Alpha值 *!
+    }
+}*/

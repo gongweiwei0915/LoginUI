@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gwilym</title>
+    <!--[if lte IE 8]>
+    <script type="text/javascript" src="js/PIE_IE678_uncompressed.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="wrapper"></div>
+<div class="login">
+    <!--登录上方-->
+<div class="login-top login-top-left" id="sao"><a href="#" id="aa">扫码登录</a></div>
+<div class="login-top login-top-right" id="userLogin"><a href="#" id="aaa">账户登录</a></div>
+
+    <div class="change">
+    <!--登录头像-->
+    <div class="person-head">
+        <img src="images/a.jpg">
+    </div>
+    <!--登录中间-->
+        <form action="server_save.html" method="post" id="form1" autocomplete="off">
+    <div class="login-mid-top">
+        <span class="bg-img"></span>
+        <input type="tel" name="username" class="text" id="tel" placeholder="请输入注册的手机号"  id="username" required="required">
+        <p id="pp" ></p>
+    </div>
+
+    <div class="login-mid-bottom">
+
+        <span class="bg-img2"></span>
+        <input type="password" class="text2" placeholder="密码" id="pwd" required="required">
+        <p id="pp2" ></p>
+
+    </div>
+
+    <!--登录按钮-->
+    <button type="submit" class="login-btn" id="logBtn" >登录</button>
+        </form>
+    <!--底部-->
+    <div class="footer">
+        <ul>
+            <li><a href="#" class="footerA"><b></b><span>QQ</span></a></li>
+
+           <!-- <li><a href="#" class="footerB"><b></b><span>微信</span></a></li>-->
+        </ul>
+        <span><a href="#">新用户注册</a> <b class="b1">|</b> <a href="#">忘记密码</a></span>
+    </div>
+</div>
+
+    <!--二维码登录-->
+    <div class="change2">
+        <!--二维码图片-->
+        <div class="code"></div>
+        <!--二维码图片下面的文字-->
+        <ul class="code-ul">
+            <li><a href="#">打开手机京东</a></li>
+            <li><a href="#">扫描二维码</a></li>
+        </ul>
+
+        <div class="footer2">
+            <ul>
+                <li><a href="#" class="footerC"><b></b><span>免输入</span></a></li>
+                <li><a href="#" class="footerC"><b></b><span>更快</span></a></li>
+                <li><a href="#" class="footerC"><b></b><span>更安全</span></a></li>
+
+
+                <!-- <li><a href="#" class="footerB"><b></b><span>微信</span></a></li>-->
+            </ul>
+        </div>
+        <div class="footer">
+            <ul>
+                <li><a href="#" class="footerA"><b></b><span>QQ</span></a></li>
+
+                <!-- <li><a href="#" class="footerB"><b></b><span>微信</span></a></li>-->
+            </ul>
+            <span><a href="#">新用户注册</a> <b class="b1">|</b> <a href="#">忘记密码</a></span>
+        </div>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript">
+    var telDom = document.querySelector("#tel");
+    var errMsg = "您输入的手机格式有误！";
+    //    每次输入内容都会触发
+    telDom.oninput = function () {
+        console.log("oninput  --- " + telDom.value);
+
+//        判断输入值是否合法
+
+        var exp = /^1[3-9][0-9]{9}$/  ;
+
+        var rel = exp.test(telDom.value);
+
+        if(rel){
+            telDom.setCustomValidity('');//清除错误信息
+        }else{
+            telDom.setCustomValidity(errMsg);//设置错误信息
+        }
+     }
+    //    失去输入焦点且值改变
+    telDom.onchange = function () {
+        console.log("onchange --- " + telDom.value)
+    }
+</script>
+<script type="text/javascript">
+    var change2 = document.querySelector(".change2");
+    var change = document.querySelector(".change");
+    var sao =  document.getElementById("sao");
+    var aa =  document.getElementById("aa");
+    var aaa =  document.getElementById("aaa");
+    var userLogin = document.getElementById("userLogin");
+    sao.onclick = function () {
+        change2.style.display = "block";
+        change.style.display = "none";
+        userLogin.style.background= '#e7f0f1';
+        sao.style.background= 'none';
+        aa.style.color = '#222';
+        aaa.style.color = '#7d7d7e';
+        userLogin.style.borderRadius ='0 15px 0 0 '
+    }
+    userLogin.onclick = function () {
+        change2.style.display = "none";
+        change.style.display = "block";
+        userLogin.style.borderRadius ='0';
+        userLogin.style.background= 'none';
+        sao.style.background= '#e7f0f1';
+        aaa.style.color = '#222';
+        aa.style.color = '#7d7d7e';
+        sao.style.style.borderRadius ='15px 0 0 0 ';
+
+    }
+</script>
+
+</html>
